@@ -1,0 +1,6 @@
+{
+  "name": "Clínica Prof. Albrecht Meerhoff — Oftalmología",
+  "description": "Sitio web institucional de la Clínica Prof. Albrecht Meerhoff en Montevideo, Uruguay. Experiencia médica, precisión quirúrgica y tecnología oftalmológica de vanguardia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
