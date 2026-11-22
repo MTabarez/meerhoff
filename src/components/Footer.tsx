@@ -224,8 +224,8 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Bottom signature bar matching Jacques + Cie footer bottom */}
-        <div className="pt-8 border-t border-[#343448]/20 grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
-          <div className="md:col-span-3 flex items-center">
+        <div className="pt-8 border-t border-[#343448]/20 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div className="md:col-span-4 flex items-center justify-center md:justify-start">
             <button
               type="button"
               onClick={onGoHome}
@@ -236,18 +236,18 @@ export const Footer: React.FC<FooterProps> = ({
             </button>
           </div>
 
-          <div className="md:col-span-5">
+          <div className="md:col-span-4 flex items-center justify-center">
             <button
               type="button"
               onClick={onGoHome}
               aria-label="Clínica Prof. Albrecht Meerhoff — Inicio"
-              className="cursor-pointer hover:opacity-80 transition-opacity"
+              className="inline-flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
             >
               <OfficialClinicLogo tone="dark" size="footer" />
             </button>
           </div>
 
-          <div className="md:col-span-4 flex flex-wrap md:justify-end items-center gap-x-5 gap-y-2 text-[12px] text-[#343448]/85">
+          <div className="md:col-span-4 flex flex-wrap justify-center md:justify-end items-center gap-x-5 gap-y-2 text-[12px] text-[#343448]/85">
             <button
               type="button"
               onClick={() => onOpenLegal('privacy')}
