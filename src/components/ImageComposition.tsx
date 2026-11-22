@@ -16,27 +16,23 @@ export const ImageComposition: React.FC = () => {
       {/* Main full-bleed horizontal macro eye canvas */}
       <div className="relative w-full min-h-[540px] sm:min-h-[680px] lg:min-h-[840px]">
         <div
-          className="absolute inset-0 -top-12 -bottom-12 will-change-transform"
+          className="absolute inset-x-0 -top-24 -bottom-24 will-change-transform"
           style={{ transform: `translate3d(0, ${mainParallax.offset}px, 0)` }}
         >
           <img
             src={EDITORIAL_ASSETS.macroEye.src}
             alt={EDITORIAL_ASSETS.macroEye.alt}
             loading="eager"
-                  decoding="async"
+            decoding="async"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center"
           />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-[#252536]/20"
-          />
         </div>
 
-        {/* Subtle translucent horizontal editorial strip across lower half (Jacques + Cie signature) */}
+        {/* Full-bleed navy editorial tint covering the entire section */}
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-[42%] bottom-0 bg-[#343448]/38 backdrop-blur-[1px]"
+          className="absolute inset-0 bg-[#343448]/42 backdrop-blur-[1px]"
         />
 
         {/* Overlapping editorial blocks over the composition */}
